@@ -4,6 +4,7 @@ Docker Resources
 The goal of this project is to simplify the process of creating and 
 updating base docker images to be used from within your projects.
 
+https://hub.docker.com/explore
 
 
 Building
