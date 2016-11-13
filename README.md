@@ -93,9 +93,9 @@ ACCOUNT=dockerhub VERSION=stable make clean_redis
 
 ACCOUNT=dockerhub VERSION=stable make clean_redis clean_node
 
-ACCOUNT=dockerhub VERSION=stable make clean_redis
+ACCOUNT=dockerhub VERSION=stable make cleanall_redis
 
-ACCOUNT=dockerhub VERSION=stable make clean_redis clean_node
+ACCOUNT=dockerhub VERSION=stable make cleanall_redis cleanall_node
 ```
 
 
