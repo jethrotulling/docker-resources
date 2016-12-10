@@ -1,0 +1,83 @@
+version: '2.0'
+
+services:
+
+  alpine:
+    image: jethrotulling/alpine:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+
+  haproxy:
+    image: jethrotulling/haproxy:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.haproxy
+
+  mariadb:
+    image: jethrotulling/mariadb:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.mariadb
+
+  memcached:
+    image: jethrotulling/memcached:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.memcached
+
+  nginx:
+    image: jethrotulling/nginx:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+
+  node:
+    image: jethrotulling/node:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.2.1
+
+  node-7-2:
+    image: jethrotulling/node:7.2
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 7.2.1
+
+  node-6-9:
+    image: jethrotulling/node:6.9
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 6.9.2
+
+  node-5-11:
+    image: jethrotulling/node:5.11
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+      args:
+        NODE_VERSION: 5.11.1
+
+  php-fpm:
+    image: jethrotulling/php-fpm:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.php-fpm
+
+  postgres:
+    image: jethrotulling/postgres:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.postgres
+
+  redis:
+    image: jethrotulling/redis:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.redis
